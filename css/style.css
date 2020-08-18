@@ -370,19 +370,16 @@
 	width:100%; 
 	height:auto; 
 	background:#edebeb;
-	padding-top: 20px;
 }
-.map {
-	margin-top: 50px;
-	margin-left: 300px;
-}
+
 #section05 h2 {
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
 	color: #210e0e;
-	margin-top: 20px;
 	font-family: 'Cafe24Oneprettynight';
+	position: relative;
+	top: 50px;
 }
 
 #section05>.map_txt,.map_txt2,.map_txt3 {
@@ -422,11 +419,14 @@
 .map {
 	background: url(../images/map.JPG);
 	background-repeat: no-repeat;
-	width: 30%;
-	height: 400px;
+	width: 33%;
+	height: 600px;
 	background-size: cover;
 	background-position: bottom;
 	border: 1px solid #ccc;
+	position: relative;
+	top: 120px;
+	left: 300px;
 }
 
 @media (max-width:767px) {
