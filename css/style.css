@@ -609,17 +609,18 @@
 
 	.map {
 		width: 90%;
-		margin: 0 auto;
+		height: 400px;
 		position: relative;
-		top: 30px;
+		left: 38px;
+		top: 70px;
 	}
 
 	#section05>.map_txt,.map_txt2,.map_txt3 {
 		text-align: center;
 		width: 100%;
 		position: relative;
-		top: 60px;
-		left: 3px;
+		top: 90px;
+		left: 1px;
 	}
 
 	.map_txt2 {
@@ -809,17 +810,18 @@
 
 	.map {
 		width: 90%;
-		margin: 0 auto;
+		height: 400px;
 		position: relative;
-		top: 30px;
+		top: 70px;
+		left: 25px;
 	}
 
 	#section05>.map_txt,.map_txt2,.map_txt3 {
 		text-align: center;
 		width: 100%;
 		position: relative;
-		top: 60px;
-		left: 3px;
+		top: 80px;
+		left: 1px;
 	}
 
 	.map_txt2 {
@@ -1032,16 +1034,17 @@
 
 	.map {
 		width: 90%;
-		margin: 0 auto;
+		height: 400px;
 		position: relative;
-		top: 30px;
+		top: 70px;
+		left: 20px;
 	}
 
 	#section05>.map_txt,.map_txt2,.map_txt3 {
 		text-align: center;
 		width: 90%;
 		position: relative;
-		top: 60px;
+		top: 80px;
 		left: 17px;
 	}
 
