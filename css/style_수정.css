@@ -1,0 +1,306 @@
+@font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face {
+	font-family: 'Handon3gyeopsal300g';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal300g.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Text';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menu_box{
+	width: 100%;
+	height: 90px;
+	position:fixed;
+	transition:all 0.5s ease-in-out; 
+	-webkit-transition:all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.menu_box ul {
+	float: right;
+}
+
+.menu_box li{
+	float: left; 
+	margin-top: 38px;
+	padding-right: 60px;
+}
+
+.menu_box li a{
+	text-decoration:none; 
+	color:#222; 
+	font-size:16px;
+	font-family: 'IBMPlexSansKR-Text';
+}
+.logo {
+	float: left;
+}
+.logo>img {	
+	margin-left: 50px;
+	margin-top: 15px;
+	width: 120px;
+}
+
+.fixed{
+	background:rgba(255, 255, 255, 0.5); 
+	transition:all 0.5s ease-in-out; 
+	-webkit-transition:all 0.5s ease-in-out;
+}
+/* navi css */
+
+#section01{
+	width:100%; 
+	height:auto; 
+	background: url(../images/main_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.sub-txt {
+	font-size:25px;
+	color: #3a2916;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Handon3gyeopsal300g';
+}
+
+.main-txt {
+	font-size:70px;
+	color: #3a2916;
+	height: 600px;
+	position: relative;
+	bottom: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Cafe24Oneprettynight';
+}
+/* section01 end */
+
+#section02{
+	height: auto;
+	padding-bottom: 10%;
+}
+
+.col-warp{
+	width:1350px;
+	margin:0 auto;
+	display:flex;
+}
+.sec02-img{
+	width:50%;
+	position:relative;
+	padding-top: 18%;
+}
+.sec02-txt{
+	width:50%;
+	padding-top: 20%;
+	padding-left: 10%;
+}
+
+.info1{
+	width:80%;
+	position:absolute;
+}
+.info2{
+	width:80%;
+	position:absolute;
+	margin-left: 20%;
+	margin-top: 30%;
+}
+.intro-main{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Cafe24Oneprettynight';
+	color: #251100;
+}
+.intro-sub{
+	margin-top: 20%;
+	font-size: 20px;
+	margin-bottom: 20%;
+	font-family: 'IBMPlexSansKR-Text';
+}
+
+/* section02 end */
+
+#section03 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,255);
+}
+
+.container {
+    background: url('../images/container.jpg');
+    position: relative;
+    padding: 60px 0 0;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.sec03-txt {
+    color: #fff;
+    text-align: center;
+    line-height: 68px;
+}
+
+.sec03-txt h1 {
+    font-size: 46px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: -0.04em;
+}
+
+.sec03-txt p {
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.introbox1 ul li div:hover {
+    background-color: #ebb137;
+}
+
+.introbox1 {
+    width: 1280px;
+    margin: 50px 0 0 400px ;
+    overflow: auto;
+}
+
+.introbox1 ul li {
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    float: left;
+    box-sizing: border-box;
+}
+
+.introbox1 ul li div {
+    text-align: center;
+    height: 100%;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.introbox1 ul li div p {
+    font-size: 16px;
+    color: #666;
+    line-height:30px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.introbox1 ul li div span {
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: -0.04em;
+    position: relative;
+    height: 60px;
+    line-height: 80px;
+    color:#000;
+}
+
+.introbox1 ul li div span:before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 80px;
+    transition: all 0.3s;
+}
+
+.introbox1 ul li div span:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #7f7f7f;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0px;
+    transition: all 0.3s;
+}
+
+
+.introbox2 ul li div:hover {
+    background-color: #ebb137;
+}
+.introbox2 {
+    width: 1280px;
+    margin: 50px 0 0 400px ;
+    overflow: auto;
+}
+
+.introbox2 ul li {
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    float: left;
+    box-sizing: border-box;
+}
+
+.introbox2 ul li div {
+    text-align: center;
+    height: 100%;
+    cursor: default;
+    transition: all 0.1s;
+}
+
+.introbox2 ul li div p {
+    font-size: 16px;
+    color: #666;
+    line-height:30px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.introbox2 ul li div span {
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: -0.04em;
+    position: relative;
+    height: 60px;
+    line-height: 80px;
+    color:#000;
+}
+
+.introbox2 ul li div span:before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 80px;
+    transition: all 0.2s;
+}
+
+.introbox2 ul li div span:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #7f7f7f;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0px;
+    transition: all 0.2s;
+}
