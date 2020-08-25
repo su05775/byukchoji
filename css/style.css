@@ -22,7 +22,11 @@
 	font-weight: normal;
 	font-style: normal;
 }
-		   
+	
+.body {
+	-ms-overflow-style: none;
+}
+::-webkit-scrollbar { display: none; }
 
 .menu_box{
 	width: 100%;
@@ -62,6 +66,21 @@
 	background:rgba(255, 255, 255, 0.5); 
 	transition:all 0.5s ease-in-out; 
 	-webkit-transition:all 0.5s ease-in-out;
+}
+
+.navi {
+	width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navi li {
+	margin: 5px 5px;
+}
+
+.btn {
+	display: none;
 }
 /* navi css */
 
@@ -379,6 +398,11 @@
 }
 /* footer end */
 
+@media (max-width:1280px) {
+	.navi {
+		width: 100%;
+	}
+}
 
 @media (max-width:767px) {
 
@@ -395,7 +419,8 @@
 	}
 	.menu_box li a {
 		font-size: 18px;
-    }
+	}
+
     #section01 {
 		width: 100%;
 	}
@@ -578,19 +603,38 @@
 	/* section 05*/
 }
 @media (max-width:414px) {
+
+	.body {
+		overflow: hidden;
+	}
+
 	.logo>img {
 		display: none;
 	}
-	.menu_box ul {
-		position: relative;
+
+	.fixed {
+		display: none;
 	}
+
 	.menu_box li {
-		position: relative;
-		left: 15px;
+		padding: 10px 5px;
+		margin-top: 42px;
 	}
 	.menu_box li a {
-		font-size: 15px;
-    }
+		font-size: 14px;
+	}
+	.navi {
+		width: 100%;
+	}
+	.navi a {
+		display: none;
+	}
+	.btn {
+		display: block;
+		background: none;
+		border: none;
+		margin-right: 30px;
+	}
     #section01 {
 		width: 100%;
 		height: 800px;
@@ -603,13 +647,12 @@
 	}
 	.main-txt {
 		position: relative;
-		bottom:420px;
+		bottom:400px;
 	}
     /* section01 */
 
     #section02 {
 		width: 100%;
-		
 	}
 	.col-warp {
 		flex-direction: column;
@@ -621,9 +664,9 @@
 	}
 	.sec02-txt {
 		position: relative;
-		width: 88%;
+		width: 98%;
 		text-align: center;
-		right: 15px;
+		right: 38px;
 	}
 	
 	.intro-main {
@@ -642,7 +685,9 @@
 	}
 	.container {
 		width: 100%;
-		background-attachment: none;
+		background: url(../images/container.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
 	}
 	.sec03-txt {
 		width: 100%;
@@ -655,12 +700,12 @@
 	}
 	.introbox1 {
 		width: 100%;
-		margin-left: 0px;
+		margin-left: -18px;
 		flex-direction: column;
 	}
 	.introbox2 {
 		width: 100%;
-		margin-left: 0px;
+		margin-left: -18px;
 		flex-direction: column;
 	}
 
@@ -669,38 +714,110 @@
 		width: 350px;
 	}
 	/* section 03 end  */
-
-	#section05 {
-		width: 100%;
-		padding-bottom: 80px;
+	
+	#section04{
+		width:100%; 
 	}
-
-	#section05 h2 {
-		font-size:35px;
-	}
-
-	#section05 p {
-		color: #444;
-	}
-
-	.map {
-		width: 90%;
-		height: 400px;
-		position: relative;
-		top: 70px;
-		left: 20px;
-	}
-
-	#section05>.map_txt,.map_txt2,.map_txt3 {
+	#section04 h1 {
+		height: 110px;
+		color: #361818;
+		font-size: 22px;
 		text-align: center;
-		width: 90%;
+		position: relative;
+		top: 40px;
+		left: 5px;
+		font-weight: bold;
+		font-family: 'MapoFlowerIsland';
+	}
+	
+	.warp {
+		width: 100%;
+		margin:0 auto;
+	}
+	/* section 04 end */
+
+	#section05{
+		width:100%; 
+		padding-bottom: 250px;
+	}
+	
+	#section05 h2 {
+		text-align: center;
+		font-size: 22px;
+		font-weight: bold;
+		color: #111;
+		font-family: 'MapoFlowerIsland';
+		letter-spacing: 2px;
+		position: relative;
+		top: 40px;
+		left: 12px;
+	}
+	
+	#map {
+		width:90%;
+		height: 300px;
 		position: relative;
 		top: 80px;
-		left: 17px;
+		left: 20px;
+		border: 1px solid rgb(180, 180, 180);
 	}
+	.sec05-txt {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		right: 0;
+		top: 80px;
+	}
+	.map_txt h3 {
+		color: #000;
+		font-size:18px;
+		font-weight: bold;
+		font-family: 'S-CoreDream-2ExtraLight';
+		margin-top: 40px;
+	}
+	
+	.map_txt p {
+		font-family: 'S-CoreDream-2ExtraLight';
+		font-size: 15px;
+		color: #222;
+		margin-top: 30px;
+		line-height: 30px;
+	}
+	/* section 05 end */
+	
+	#footer {
+		width: 100%;
+	}
+	.util ul li {
+		font-size: 20px;
+		color: #333;
+		font: bold;
+		position: relative;
+		bottom: 70px;
+	}
+	.conts-area {
+		width: 100%;
+		padding-top: 100px;
+		background-color: #ccc;
+	}
+	.company-info {
+		position: relative;
+		bottom: 50px;
+		line-height:20px;
+	}
+	.place {
+		padding-bottom: 20px;
+	}
+	.copyright {
+		position: relative;
+		font-size: 15px;
+		color: #333;
+		bottom: 25px;
+	}
+	.company-info li {
+		font-size: 15px;
+		color: #555;
+	}
+	/* footer end */
 
-	.map_txt2 {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
 }

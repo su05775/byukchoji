@@ -25,6 +25,15 @@
     });
 </script>
 <!-- bxslider -->
+
+<script>
+    $(function(){
+        $(".btn").click(function(){
+            $(".navi a").slideToggle();
+        });
+    });
+</script>
+<!-- 메뉴버튼 -->
 </head>
 
 <body>
@@ -33,12 +42,15 @@
             <div class="logo">
                 <img src="images/logo.png" alt="logo">
             </div>
-            <ul>
+            <ul class="navi">
                 <li><a href="#section01">메인</a></li>
                 <li><a href="#section02">소개</a></li>
                 <li><a href="#section03">공간이야기</a></li>
                 <li><a href="#section04">갤러리</a></li>
                 <li><a href="#section05">오시는길</a></li>
+                <li>
+                    <button class="btn"><img src="images/icon.png" alt=""></button>
+                </li>
             </ul>
         </div>
         <!-- navi end -->
