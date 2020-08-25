@@ -43,8 +43,8 @@
 
 .menu_box li{
 	float: left; 
-	margin-top: 38px;
 	padding-right: 60px;
+	padding-top: 32px;
 }
 
 .menu_box li a{
@@ -613,12 +613,12 @@
 	}
 
 	.fixed {
-		display: none;
+		background: none;
 	}
 
 	.menu_box li {
 		padding: 10px 5px;
-		margin-top: 42px;
+		margin-top: 45px;
 	}
 	.menu_box li a {
 		font-size: 14px;
@@ -626,6 +626,7 @@
 	.navi {
 		width: 100%;
 	}
+
 	.navi a {
 		display: none;
 	}
@@ -634,6 +635,7 @@
 		background: none;
 		border: none;
 		margin-right: 30px;
+		margin-top: -4px;
 	}
     #section01 {
 		width: 100%;
