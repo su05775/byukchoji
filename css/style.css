@@ -22,12 +22,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-	
-.body {
-	-ms-overflow-style: none;
-}
-::-webkit-scrollbar { display: none; }
-
+		   
 .menu_box{
 	width: 100%;
 	height: 90px;
@@ -42,9 +37,9 @@
 }
 
 .menu_box li{
-	float: left; 
-	padding-right: 60px;
-	padding-top: 32px;
+	float: left;
+	margin-top: 38px;
+	margin-right: 60px;
 }
 
 .menu_box li a{
@@ -62,25 +57,13 @@
 	width: 120px;
 }
 
+.btn {
+	display: none;
+}
 .fixed{
 	background:rgba(255, 255, 255, 0.5); 
 	transition:all 0.5s ease-in-out; 
 	-webkit-transition:all 0.5s ease-in-out;
-}
-
-.navi {
-	width: 1280px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: flex-end;
-}
-
-.navi li {
-	margin: 5px 5px;
-}
-
-.btn {
-	display: none;
 }
 /* navi css */
 
@@ -279,7 +262,7 @@
     top: -20px;
     transition: all 0.3s;
 }
-/* section 03 */
+/* section 03 end */
 
 #section04{
 	width:100%; 
@@ -297,37 +280,36 @@
 }
 
 .warp {
-	width: 47%;
+	width: 60%;
 	margin:0 auto;
 }
 
+.clear {
+	clear:both;
+}
 /* section 04 end */
 
 #section05{
 	width:100%; 
-	height: auto;
 	background:#f0f0f0;
-	margin-bottom: -150px;
 }
 
 #section05 h2 {
+	padding-top:30px;
 	text-align: center;
 	font-size: 40px;
 	font-weight: bold;
 	color: #111;
 	font-family: 'MapoFlowerIsland';
 	letter-spacing: 2px;
-	position: relative;
-	top: 50px;
-	left: 20px;
 }
 
 #map {
-	width:37%;
-	height:700px;
+	width:61%;
+	height: 500px;
+	margin: 0 auto;
 	position: relative;
-	top: 130px;
-	left: 280px;
+	margin-top: 30px;
 	border: 1px solid rgb(180, 180, 180);
 }
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
@@ -337,11 +319,8 @@
 .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
 
 .sec05-txt {
-	width: 100%;
-	text-align: right;
-	position: relative;
-	right: 300px;
-	top: -450px;
+	text-align: center;
+	padding-bottom: 30px;
 }
 .map_txt h3 {
 	color: #000;
@@ -359,9 +338,6 @@
 	line-height: 30px;
 }
 /* section 05 end */
-
-
-/* footer */
 
 #footer {
 	width: 100%;
@@ -398,11 +374,6 @@
 }
 /* footer end */
 
-@media (max-width:1280px) {
-	.navi {
-		width: 100%;
-	}
-}
 
 @media (max-width:767px) {
 
@@ -419,14 +390,13 @@
 	}
 	.menu_box li a {
 		font-size: 18px;
-	}
-
+    }
     #section01 {
 		width: 100%;
 	}
 	.sub-txt {
 		font-size:20px;
-    }
+	}
     /* section 01 */
 
     #section02 {
@@ -450,14 +420,14 @@
 
 	.intro-main {
 		position: relative;
-		top: 90px;
-		font-size:35px;
+		top: 40px;
+		font-size:40px;
 	}
 	.intro-sub {
 		position: relative;
-		padding-bottom: 200px;
-		font-size: 20px;
-		line-height:25px;
+		padding-bottom: 250px;
+		font-size: 28px;
+		line-height:35px;
 		color: #222;
     }
     /* section 02 */
@@ -467,78 +437,183 @@
 	}
 	.container {
 		width: 100%;
+		background: url(../images/container.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
 	}
 	.sec03-txt {
 		width: 100%;
 	}
+	.sec03-txt h1 {
+		font-size: 38px;
+	}
+	.sec03-txt p {
+		font-size: 22px;
+	}
 	.introbox1 {
 		width: 100%;
-		margin-left: 0;
 		flex-direction: column;
+		margin: 0 auto;
+		margin-left: 35px;
 	}
 	.introbox2 {
 		width: 100%;
-		margin-left: 0;
 		flex-direction: column;
+		margin: 0 auto;
+		margin-left: 35px;
 	}
 
 	.img_wrap {
-		height: 350px;
-		width: 350px;
+		height: 500px;
+		width: 600px;
 	}
-	/* section 03 end */
-	#section05 {
-		width: 100%;
-		padding-bottom: 100px;
+	.img_wrap img {
+		height: 500px;
+		width: 600px;
 	}
+	.img_txt {
+		margin-top:80px;
+		font-size: 20px;
+	}
+	.img_txt span {
+		font-size:30px;
+	}
+	/* section 03 end  */
 
-	#section05 h2 {
-		font-size:35px;
+	#section04{
+		width:100%; 
 	}
-
-	.map {
-		width: 90%;
-		height: 400px;
-		position: relative;
-		left: 38px;
-		top: 70px;
-	}
-
-	#section05>.map_txt,.map_txt2,.map_txt3 {
+	#section04 h1 {
+		height: 110px;
+		color: #361818;
+		font-size: 35px;
 		text-align: center;
-		width: 100%;
 		position: relative;
-		top: 90px;
-		left: 1px;
+		top: 40px;
+		font-weight: bold;
+		font-family: 'MapoFlowerIsland';
 	}
+	
+	.warp {
+		width: 100%;
+		margin:0 auto;
+	}
+	/* section 04 end */
 
-	.map_txt2 {
-		margin-top: 20px;
-		margin-bottom: 20px;
+	#section05{
+		width:100%; 
+		padding-bottom: 250px;
 	}
+	
+	#section05 h2 {
+		text-align: center;
+		font-size: 35px;
+		font-weight: bold;
+		color: #111;
+		font-family: 'MapoFlowerIsland';
+		letter-spacing: 2px;
+		position: relative;
+		top: 40px;
+		left: 12px;
+	}
+	
+	#map {
+		width:90%;
+		height: 300px;
+		position: relative;
+		top: 80px;
+		left: 35px;
+		border: 1px solid rgb(180, 180, 180);
+	}
+	.sec05-txt {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		right: 0;
+		top: 80px;
+	}
+	.map_txt h3 {
+		color: #000;
+		font-size:25px;
+		font-weight: bold;
+		font-family: 'S-CoreDream-2ExtraLight';
+		margin-top: 40px;
+	}
+	
+	.map_txt p {
+		font-family: 'S-CoreDream-2ExtraLight';
+		font-size: 23px;
+		color: #222;
+		margin-top: 30px;
+		line-height: 30px;
+	}
+	/* section 05 end */
+
+	#footer {
+		width: 100%;
+	}
+	.util ul li {
+		font-size: 20px;
+		color: #333;
+		font: bold;
+		position: relative;
+		bottom: 70px;
+	}
+	.conts-area {
+		width: 100%;
+		padding-top: 100px;
+		background-color: #ccc;
+	}
+	.company-info {
+		position: relative;
+		bottom: 50px;
+		line-height:20px;
+	}
+	.place {
+		padding-bottom: 20px;
+	}
+	.copyright {
+		position: relative;
+		font-size: 15px;
+		color: #333;
+		bottom: 25px;
+	}
+	.company-info li {
+		font-size: 15px;
+		color: #555;
+	}
+	/* footer end */
 }
 
+/* ---------------------------- 반응형 -----------------------------*/
 @media (max-width:500px) {
 	.logo>img {
-		margin:30px 0 0 15px;
+		margin:27px 0 0 15px;
 		width: 70px;
 	}
-	.menu_box ul {
-		position: relative;
-		left: 25px;
+	.navi {
+		margin-left: -40px;
 	}
-	.menu_box li {
-		padding-right: 30px;
+	.navi li {
+		margin-right: 25px;
 	}
-	.menu_box li a {
-		font-size: 16px;
+	.navi li a {
+		font-size: 17px;
     }
     #section01 {
 		width: 100%;
+		height: 800px;
 	}
 	.sub-txt {
-		font-size:20px;
-    }
+		width: 100%;
+		font-size:21px;
+		position: relative;
+		bottom:30px;
+	}
+	.main-txt {
+		position: relative;
+		bottom:420px;
+	}
     /* section01 */
 
     #section02 {
@@ -554,10 +629,10 @@
 	}
 	.sec02-txt {
 		position: relative;
-		top: 200px;
-		width: 85%;
+		top: 260px;
+		width: 90%;
 		text-align: center;
-		right: 10px;
+		right: 22px;
 	}
 
 	.intro-main {
@@ -565,42 +640,163 @@
 	}
 	.intro-sub {
 		position: relative;
-		top: 50px;
+		top: 10px;
 		font-size: 18px;
     }
     /* section 02 */
 
-
-	#section05 {
+	#section03 {
 		width: 100%;
-		padding-bottom: 80px;
+		padding-bottom:40px;
+	}
+	.container {
+		width: 100%;
+		background: url(../images/container.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+	.sec03-txt {
+		width: 100%;
+	}
+	.sec03-txt h1 {
+		font-size: 25px;
+	}
+	.sec03-txt p {
+		font-size: 18px;
+	}
+	.introbox1 {
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-left: -5px;
+	}
+	.introbox2 {
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-left: -5px;
 	}
 
-	#section05 h2 {
-		font-size:35px;
-	}
-
-	.map {
-		width: 90%;
+	.img_wrap {
 		height: 400px;
-		position: relative;
-		top: 70px;
-		left: 25px;
+		width: 400px;
 	}
+	.img_wrap img {
+		height: 400px;
+		width: 400px;
+	}
+	.img_txt {
+		margin-top:30px;
+		font-size: 20px;
+	}
+	.img_txt span {
+		font-size:30px;
+	}
+	/* section 03 end  */
 
-	#section05>.map_txt,.map_txt2,.map_txt3 {
+	#section04{
+		width:100%; 
+	}
+	#section04 h1 {
+		height: 110px;
+		color: #361818;
+		font-size: 35px;
 		text-align: center;
+		position: relative;
+		top: 40px;
+		font-weight: bold;
+		font-family: 'MapoFlowerIsland';
+	}
+	
+	.warp {
 		width: 100%;
+		margin:0 auto;
+	}
+	/* section 04 end */
+
+	#section05{
+		width:100%; 
+		padding-bottom: 250px;
+	}
+	
+	#section05 h2 {
+		text-align: center;
+		font-size: 35px;
+		font-weight: bold;
+		color: #111;
+		font-family: 'MapoFlowerIsland';
+		letter-spacing: 2px;
+		position: relative;
+		top: 40px;
+		left: 12px;
+	}
+	
+	#map {
+		width:90%;
+		height: 300px;
 		position: relative;
 		top: 80px;
-		left: 1px;
+		left: 25px;
+		border: 1px solid rgb(180, 180, 180);
 	}
+	.sec05-txt {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		right: 0;
+		top: 80px;
+	}
+	.map_txt h3 {
+		color: #000;
+		font-size:22px;
+		font-weight: bold;
+		font-family: 'S-CoreDream-2ExtraLight';
+		margin-top: 40px;
+	}
+	
+	.map_txt p {
+		font-family: 'S-CoreDream-2ExtraLight';
+		font-size: 18px;
+		color: #222;
+		margin-top: 30px;
+		line-height: 30px;
+	}
+	/* section 05 end */
 
-	.map_txt2 {
-		margin-top: 20px;
-		margin-bottom: 20px;
+	#footer {
+		width: 100%;
 	}
-	/* section 05*/
+	.util ul li {
+		font-size: 20px;
+		color: #333;
+		font: bold;
+		position: relative;
+		bottom: 70px;
+	}
+	.conts-area {
+		width: 100%;
+		padding-top: 100px;
+		background-color: #ccc;
+	}
+	.company-info {
+		position: relative;
+		bottom: 50px;
+		line-height:20px;
+	}
+	.place {
+		padding-bottom: 20px;
+	}
+	.copyright {
+		position: relative;
+		font-size: 15px;
+		color: #333;
+		bottom: 25px;
+	}
+	.company-info li {
+		font-size: 15px;
+		color: #555;
+	}
+	/* footer end */
 }
 @media (max-width:414px) {
 
@@ -617,7 +813,7 @@
 	}
 
 	.menu_box li {
-		padding: 10px 5px;
+		padding: 0 5px;
 		margin-top: 45px;
 	}
 	.menu_box li a {
@@ -634,7 +830,7 @@
 		display: block;
 		background: none;
 		border: none;
-		margin-right: 30px;
+		margin-left: 160px;
 		margin-top: -4px;
 	}
     #section01 {
@@ -702,16 +898,20 @@
 	}
 	.introbox1 {
 		width: 100%;
-		margin-left: -18px;
 		flex-direction: column;
+		margin-left: -18px;
 	}
 	.introbox2 {
 		width: 100%;
-		margin-left: -18px;
 		flex-direction: column;
+		margin-left: -18px;
 	}
 
 	.img_wrap {
+		height: 350px;
+		width: 350px;
+	}
+	.img_wrap img {
 		height: 350px;
 		width: 350px;
 	}
@@ -821,5 +1021,4 @@
 		color: #555;
 	}
 	/* footer end */
-
 }

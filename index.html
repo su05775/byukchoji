@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device=width, initial-scale=1.0">
 <title>벽초지 수목원</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style_수정.css">
 <!-- main css -->
 <link rel="stylesheet" href="css/reset.css">
 <!-- reset css -->
@@ -14,6 +14,17 @@
 <!-- bxslider -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+    $(function(){
+        $(".btn").click(function(){
+            $(".navi a").slideToggle();
+        });
+    });
+</script>
+<!-- 메뉴버튼 -->
+
+
 <script type="text/javascript">  
     $(function(){
         $('.bxslider').bxSlider({
@@ -25,15 +36,6 @@
     });
 </script>
 <!-- bxslider -->
-
-<script>
-    $(function(){
-        $(".btn").click(function(){
-            $(".navi a").slideToggle();
-        });
-    });
-</script>
-<!-- 메뉴버튼 -->
 </head>
 
 <body>
@@ -49,7 +51,7 @@
                 <li><a href="#section04">갤러리</a></li>
                 <li><a href="#section05">오시는길</a></li>
                 <li>
-                    <button class="btn"><img src="images/icon3.png" alt=""></button>
+                    <button class="btn"><img src="images/icon.png" alt=""></button>
                 </li>
             </ul>
         </div>
@@ -57,6 +59,7 @@
         <p class="sub-txt">동서양의 아름다운 정원을 모두 품은</p>
         <h1 class="main-txt">벽초지 <br> 수목원</h1>
     </div>
+    <div class="clear"></div>
     <!-- section01 -->
     
     <div id="section02">
@@ -79,6 +82,7 @@
             </div>
         </div>
     </div>
+    <div class="clear"></div>
     <!-- section2 -->
     
     <div id="section03">
@@ -172,6 +176,7 @@
             </div>        
         </div>
     </div>
+    <div class="clear"></div>
     <!-- section 03 -->
     <div id="section04">
         <h1>갤러리</h1>
@@ -210,6 +215,7 @@
             </div>
         </div>
     </div>
+    <div class="clear"></div>
     <!-- sextion4 -->
     <div id="section05">
         <h2>오시는길</h2>
@@ -278,6 +284,7 @@
     </div>
         
     </div>
+    
     <!-- section5 -->
 
     <footer id="footer">
@@ -297,6 +304,7 @@
             </div>
             <p class="copyright">Copyright © byukchoji gardens. All rights reserved.</p>
         </div>
+        <div class="clear"></div>
 
     <script>
         /**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
