@@ -373,3 +373,646 @@
 	color: #555;
 }
 /* footer end */
+
+@media (max-width:767px) {
+
+	.logo>img {
+		margin:25px 0 0 30px;
+		width: 80px;
+	}
+	.menu_box {
+		display: flex;
+	}
+	.menu_box ul {
+		position: relative;
+		left: 60px;
+	}
+	.menu_box li a {
+		font-size: 18px;
+    }
+    #section01 {
+		width: 100%;
+	}
+	.sub-txt {
+		font-size:20px;
+	}
+    /* section 01 */
+
+    #section02 {
+		width: 100%;
+	}
+	.col-warp {
+		flex-direction: column;
+		width: 100%;
+	}
+	.sec02-img {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.sec02-txt {
+		position: relative;
+		top: 340px;
+		width: 85%;
+		text-align: center;
+		right: 10px;
+	}
+
+	.intro-main {
+		position: relative;
+		top: 40px;
+		font-size:40px;
+	}
+	.intro-sub {
+		position: relative;
+		padding-bottom: 250px;
+		font-size: 28px;
+		line-height:35px;
+		color: #222;
+    }
+    /* section 02 */
+
+	#section03 {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		background: url(../images/container.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+	.sec03-txt {
+		width: 100%;
+	}
+	.sec03-txt h1 {
+		font-size: 38px;
+	}
+	.sec03-txt p {
+		font-size: 22px;
+	}
+	.introbox1 {
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-left: 35px;
+	}
+	.introbox2 {
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-left: 35px;
+	}
+
+	.img_wrap {
+		height: 500px;
+		width: 600px;
+	}
+	.img_wrap img {
+		height: 500px;
+		width: 600px;
+	}
+	.img_txt {
+		margin-top:80px;
+		font-size: 20px;
+	}
+	.img_txt span {
+		font-size:30px;
+	}
+	/* section 03 end  */
+
+	#section04{
+		width:100%; 
+	}
+	#section04 h1 {
+		height: 110px;
+		color: #361818;
+		font-size: 35px;
+		text-align: center;
+		position: relative;
+		top: 40px;
+		font-weight: bold;
+		font-family: 'MapoFlowerIsland';
+	}
+	
+	.warp {
+		width: 100%;
+		margin:0 auto;
+	}
+	/* section 04 end */
+
+	#section05{
+		width:100%; 
+		padding-bottom: 250px;
+	}
+	
+	#section05 h2 {
+		text-align: center;
+		font-size: 35px;
+		font-weight: bold;
+		color: #111;
+		font-family: 'MapoFlowerIsland';
+		letter-spacing: 2px;
+		position: relative;
+		top: 40px;
+		left: 12px;
+	}
+	
+	#map {
+		width:90%;
+		height: 300px;
+		position: relative;
+		top: 80px;
+		left: 35px;
+		border: 1px solid rgb(180, 180, 180);
+	}
+	.sec05-txt {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		right: 0;
+		top: 80px;
+	}
+	.map_txt h3 {
+		color: #000;
+		font-size:25px;
+		font-weight: bold;
+		font-family: 'S-CoreDream-2ExtraLight';
+		margin-top: 40px;
+	}
+	
+	.map_txt p {
+		font-family: 'S-CoreDream-2ExtraLight';
+		font-size: 23px;
+		color: #222;
+		margin-top: 30px;
+		line-height: 30px;
+	}
+	/* section 05 end */
+
+	#footer {
+		width: 100%;
+	}
+	.util ul li {
+		font-size: 20px;
+		color: #333;
+		font: bold;
+		position: relative;
+		bottom: 70px;
+	}
+	.conts-area {
+		width: 100%;
+		padding-top: 100px;
+		background-color: #ccc;
+	}
+	.company-info {
+		position: relative;
+		bottom: 50px;
+		line-height:20px;
+	}
+	.place {
+		padding-bottom: 20px;
+	}
+	.copyright {
+		position: relative;
+		font-size: 15px;
+		color: #333;
+		bottom: 25px;
+	}
+	.company-info li {
+		font-size: 15px;
+		color: #555;
+	}
+	/* footer end */
+}
+
+@media (max-width:500px) {
+	.logo>img {
+		margin:27px 0 0 15px;
+		width: 70px;
+	}
+	.navi {
+		margin-left: -40px;
+	}
+	.navi li {
+		margin-right: 25px;
+	}
+	.navi li a {
+		font-size: 17px;
+    }
+    #section01 {
+		width: 100%;
+		height: 800px;
+	}
+	.sub-txt {
+		width: 100%;
+		font-size:21px;
+		position: relative;
+		bottom:30px;
+	}
+	.main-txt {
+		position: relative;
+		bottom:420px;
+	}
+    /* section01 */
+
+    #section02 {
+		width: 100%;
+	}
+	.col-warp {
+		flex-direction: column;
+		width: 100%;
+	}
+	.sec02-img {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.sec02-txt {
+		position: relative;
+		top: 260px;
+		width: 90%;
+		text-align: center;
+		right: 22px;
+	}
+
+	.intro-main {
+		font-size:28px;
+	}
+	.intro-sub {
+		position: relative;
+		top: 10px;
+		font-size: 18px;
+    }
+    /* section 02 */
+
+	#section03 {
+		width: 100%;
+		padding-bottom:40px;
+	}
+	.container {
+		width: 100%;
+		background: url(../images/container.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+	.sec03-txt {
+		width: 100%;
+	}
+	.sec03-txt h1 {
+		font-size: 25px;
+	}
+	.sec03-txt p {
+		font-size: 18px;
+	}
+	.introbox1 {
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-left: -5px;
+	}
+	.introbox2 {
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-left: -5px;
+	}
+
+	.img_wrap {
+		height: 400px;
+		width: 400px;
+	}
+	.img_wrap img {
+		height: 400px;
+		width: 400px;
+	}
+	.img_txt {
+		margin-top:30px;
+		font-size: 20px;
+	}
+	.img_txt span {
+		font-size:30px;
+	}
+	/* section 03 end  */
+
+	#section04{
+		width:100%; 
+	}
+	#section04 h1 {
+		height: 110px;
+		color: #361818;
+		font-size: 35px;
+		text-align: center;
+		position: relative;
+		top: 40px;
+		font-weight: bold;
+		font-family: 'MapoFlowerIsland';
+	}
+	
+	.warp {
+		width: 100%;
+		margin:0 auto;
+	}
+	/* section 04 end */
+
+	#section05{
+		width:100%; 
+		padding-bottom: 250px;
+	}
+	
+	#section05 h2 {
+		text-align: center;
+		font-size: 35px;
+		font-weight: bold;
+		color: #111;
+		font-family: 'MapoFlowerIsland';
+		letter-spacing: 2px;
+		position: relative;
+		top: 40px;
+		left: 12px;
+	}
+	
+	#map {
+		width:90%;
+		height: 300px;
+		position: relative;
+		top: 80px;
+		left: 25px;
+		border: 1px solid rgb(180, 180, 180);
+	}
+	.sec05-txt {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		right: 0;
+		top: 80px;
+	}
+	.map_txt h3 {
+		color: #000;
+		font-size:22px;
+		font-weight: bold;
+		font-family: 'S-CoreDream-2ExtraLight';
+		margin-top: 40px;
+	}
+	
+	.map_txt p {
+		font-family: 'S-CoreDream-2ExtraLight';
+		font-size: 18px;
+		color: #222;
+		margin-top: 30px;
+		line-height: 30px;
+	}
+	/* section 05 end */
+
+	#footer {
+		width: 100%;
+	}
+	.util ul li {
+		font-size: 20px;
+		color: #333;
+		font: bold;
+		position: relative;
+		bottom: 70px;
+	}
+	.conts-area {
+		width: 100%;
+		padding-top: 100px;
+		background-color: #ccc;
+	}
+	.company-info {
+		position: relative;
+		bottom: 50px;
+		line-height:20px;
+	}
+	.place {
+		padding-bottom: 20px;
+	}
+	.copyright {
+		position: relative;
+		font-size: 15px;
+		color: #333;
+		bottom: 25px;
+	}
+	.company-info li {
+		font-size: 15px;
+		color: #555;
+	}
+	/* footer end */
+}
+@media (max-width:414px) {
+
+	.logo>img {
+		display: none;
+	}
+
+	.fixed {
+		background: none;
+	}
+
+	.menu_box li {
+		padding: 0 5px;
+		margin-top: 45px;
+	}
+	.menu_box li a {
+		font-size: 14px;
+	}
+	.navi {
+		width: 100%;
+	}
+
+	.navi a {
+		display: none;
+	}
+	.btn {
+		display: block;
+		background: none;
+		border: none;
+		margin-left: 160px;
+		margin-top: -4px;
+	}
+    #section01 {
+		width: 100%;
+		height: 800px;
+	}
+	.sub-txt {
+		width: 100%;
+		font-size:21px;
+		position: relative;
+		bottom:30px;
+	}
+	.main-txt {
+		position: relative;
+		bottom:400px;
+	}
+    /* section01 */
+
+    #section02 {
+		width: 100%;
+	}
+	.col-warp {
+		flex-direction: column;
+		width: 100%;
+	}
+	.sec02-img {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.sec02-txt {
+		position: relative;
+		width: 98%;
+		text-align: center;
+		right: 38px;
+	}
+	
+	.intro-main {
+		font-size:24px;
+		position:relative;
+		top: 70px;
+	}
+	.intro-sub {
+		padding-bottom: 200px;
+		font-size: 16px;
+    }
+	/* section 02 */
+	
+	#section03 {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		background: url(../images/container.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+	.sec03-txt {
+		width: 100%;
+	}
+	.sec03-txt h1 {
+		font-size: 25px;
+	}
+	.sec03-txt p {
+		font-size: 15px;
+	}
+	.introbox1 {
+		width: 100%;
+		flex-direction: column;
+		margin-left: -18px;
+	}
+	.introbox2 {
+		width: 100%;
+		flex-direction: column;
+		margin-left: -18px;
+	}
+
+	.img_wrap {
+		height: 350px;
+		width: 350px;
+	}
+	.img_wrap img {
+		height: 350px;
+		width: 350px;
+	}
+	/* section 03 end  */
+	
+	#section04{
+		width:100%; 
+	}
+	#section04 h1 {
+		height: 110px;
+		color: #361818;
+		font-size: 22px;
+		text-align: center;
+		position: relative;
+		top: 40px;
+		left: 5px;
+		font-weight: bold;
+		font-family: 'MapoFlowerIsland';
+	}
+	
+	.warp {
+		width: 100%;
+		margin:0 auto;
+	}
+	/* section 04 end */
+
+	#section05{
+		width:100%; 
+		padding-bottom: 250px;
+	}
+	
+	#section05 h2 {
+		text-align: center;
+		font-size: 22px;
+		font-weight: bold;
+		color: #111;
+		font-family: 'MapoFlowerIsland';
+		letter-spacing: 2px;
+		position: relative;
+		top: 40px;
+		left: 12px;
+	}
+	
+	#map {
+		width:90%;
+		height: 300px;
+		position: relative;
+		top: 80px;
+		left: 20px;
+		border: 1px solid rgb(180, 180, 180);
+	}
+	.sec05-txt {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		right: 0;
+		top: 80px;
+	}
+	.map_txt h3 {
+		color: #000;
+		font-size:18px;
+		font-weight: bold;
+		font-family: 'S-CoreDream-2ExtraLight';
+		margin-top: 40px;
+	}
+	
+	.map_txt p {
+		font-family: 'S-CoreDream-2ExtraLight';
+		font-size: 15px;
+		color: #222;
+		margin-top: 30px;
+		line-height: 30px;
+	}
+	/* section 05 end */
+	
+	#footer {
+		width: 100%;
+	}
+	.util ul li {
+		font-size: 20px;
+		color: #333;
+		font: bold;
+		position: relative;
+		bottom: 70px;
+	}
+	.conts-area {
+		width: 100%;
+		padding-top: 100px;
+		background-color: #ccc;
+	}
+	.company-info {
+		position: relative;
+		bottom: 50px;
+		line-height:20px;
+	}
+	.place {
+		padding-bottom: 20px;
+	}
+	.copyright {
+		position: relative;
+		font-size: 15px;
+		color: #333;
+		bottom: 25px;
+	}
+	.company-info li {
+		font-size: 15px;
+		color: #555;
+	}
+	/* footer end */
+}

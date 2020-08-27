@@ -374,7 +374,7 @@
 }
 /* footer end */
 
-
+/* ---------------------------- 반응형 -----------------------------*/
 @media (max-width:767px) {
 
 	.logo>img {
@@ -585,7 +585,6 @@
 	/* footer end */
 }
 
-/* ---------------------------- 반응형 -----------------------------*/
 @media (max-width:500px) {
 	.logo>img {
 		margin:27px 0 0 15px;
@@ -799,10 +798,6 @@
 	/* footer end */
 }
 @media (max-width:414px) {
-
-	.body {
-		overflow: hidden;
-	}
 
 	.logo>img {
 		display: none;
