@@ -74,6 +74,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
+	background-attachment: fixed;
 }
 
 .sub-txt {
@@ -342,35 +343,32 @@
 #footer {
 	width: 100%;
 }
-.util ul li {
-    font-size: 24px;
-	color: #333;
-	font: bold;
-	position: relative;
-	bottom: 70px;
-}
 .conts-area {
 	width: 100%;
-	padding-top: 100px;
-    background-color: #ccc;
+	background-color: #ccc;
+	padding-top: 20px;
+}
+.footer-logo {	
+	width: 100%;
+}
+.footer-logo img {	
+	margin-bottom: 30px;
+	margin-left: 800px;
 }
 .company-info {
-	position: relative;
-	bottom: 50px;
-	line-height:20px;
-}
-.place {
 	padding-bottom: 20px;
+	margin-left: 720px;
 }
 .copyright {
-	position: relative;
     font-size: 15px;
 	color: #444;
-	bottom: 25px;
+	padding-bottom: 20px;
+	margin-left: 720px;
 }
 .company-info li {
 	font-size: 15px;
 	color: #555;
+	padding-bottom: 5px;
 }
 /* footer end */
 
