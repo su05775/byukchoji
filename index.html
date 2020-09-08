@@ -5,15 +5,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device=width, initial-scale=1.0">
 <title>벽초지 수목원</title>
-<link rel="stylesheet" href="css/style_수정.css">
+<link rel="stylesheet" href="css/animate.css">
+<!-- wow css -->
+<link rel="stylesheet" href="css/style.css">
 <!-- main css -->
 <link rel="stylesheet" href="css/reset.css">
 <!-- reset css -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
 <!-- bxslider -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- sec02 animation -->
 
 <script>
     $(function(){
@@ -64,11 +72,11 @@
     
     <div id="section02">
         <div class="col-warp">
-            <div class="sec02-img">
+            <div class="sec02-img wow slideInLeft">
                 <img src="images/Info1.jpg" alt="Info-1" class="info1">
                 <img src="images/Info2.jpg" alt="Info-2" class="info2">
             </div>
-            <div class="sec02-txt">
+            <div class="sec02-txt wow slideInRight">
                 <h1 class="intro-main">동양과 서양정원의 아름다움을 그려낸 <br>
                     벽초지 수목원</h1>
                 <p class="intro-sub">자연을 사랑하는 한 사람과,<br>
