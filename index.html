@@ -23,16 +23,36 @@
 <script>
     new WOW().init();
 </script>
-<!-- sec02 animation -->
+<!-- animation -->
 
 <script>
-    $(function(){
-        $(".btn").click(function(){
-            $(".navi a").slideToggle();
-        });
-    });
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
 </script>
-<!-- 메뉴버튼 -->
+<!-- mobile menu -->
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+<!-- section05 tab menu -->
 </head>
 
 <body>
@@ -47,17 +67,29 @@
                 <li><a href="#section03">공간이야기</a></li>
                 <li><a href="#section04">갤러리</a></li>
                 <li><a href="#section05">오시는길</a></li>
-                <li>
-                    <button class="btn"><img src="images/icon.png" alt=""></button>
-                </li>
             </ul>
         </div>
         <!-- navi end -->
+        <div class="mobile-container">
+            <div class="topnav">
+              <div id="myLinks">
+                <a href="#section1">메인</a>
+                <a href="#">소개</a>
+                <a href="#">공간이야기</a>
+                <a href="#">갤러리</a>
+               <a href="#">오시는길</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+        </div>
         <p class="sub-txt  wow slideInDown">동서양의 아름다운 정원을 모두 품은</p>
         <h1 class="main-txt  wow slideInDown">벽초지 <br> 수목원</h1>
     </div>
+    <!-- menu end -->
     <div class="clear"></div>
-    <!-- section01 -->
+    <!-- section01  end-->
     
     <div id="section02">
         <div class="col-warp">
@@ -116,7 +148,7 @@
                     </p>    
                 </div>
             </div>
-            <div class="img_wrap wow slideInRight">
+            <div class="img_wrap wow slideInLeft">
                 <img class="img__img" src="images/box3.jpg" />
                 <div class="box-txt">
                     <p class="img_txt">친환경 자연속 모험공간 <br>
@@ -131,7 +163,7 @@
         </div>
     
         <div class="introbox2">
-            <div class="img_wrap wow slideInLeft">
+            <div class="img_wrap wow slideInRight">
                 <img class="img__img" src="images/box4.jpg" />
                 <div class="box-txt">
                     <p class="img_txt">파주의 아치를 지나 
@@ -208,6 +240,12 @@
                 <div class="swiper-slide">
                     <img src="images/img-10.jpg" alt="">
                 </div>
+                <div class="swiper-slide">
+                    <img src="images/img-11.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/img-12.jpg" alt="">
+                </div>
             </div>
               <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -260,10 +298,11 @@
     });
   </script>
 <!-- swiper --> 
-    <div class="clear"></div>
-    <!-- sextion4 -->
+
+
+
     <div id="section05">
-        <h2>오시는길</h2>
+        <h2 class="wow slideInRight">오시는길</h2>
         <!-- 카카오맵 지도 -->
         <div id="map"></div>
     <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=	e525f61fd8aef576aff4fd40a9667ba2"></script>
@@ -312,31 +351,31 @@
     });
     </script>
     <!-- 카카오맵 지도 -->
-    <div class="sec05-txt">
-        <div class="map_txt">
-                <h3>주소</h3>
-                <p>경기 파주시 광탄면 부흥로 242</p>    
+        <div class="tab-menu wow slideInLeft">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">대중교통</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">자차</button>
+            </div>
+            
+            <div id="London" class="tabcontent">
+                <h3>대중교통 이용시</h3>
+                <p class="tabcontent2">경의중앙선 금촌역 하차 > 67번 마을버스 (약 30분) > 벽초지 수목원</p>
+                <p class="tabcontent2">경의중앙선 월롱역 하차 > 택시 (뚝방길 이용 약 8,000원) > 벽초지 수목원</p>
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+                <h3>자차 이용시</h3>
+                <p>자유로 > 문발IC(56번 운정신도시/마장호수 방면) > 방축교차로(360번 양주/의정부 방면) > 벽초지수목원</p> 
+            </div>    
         </div>
-        <div class="map_txt">
-            <h3>전화번호</h3>
-            <p>031.957.2004</p>    
-        </div>
-        <div class="map_txt">
-            <h3>대중교통 이용시</h3>
-            <p>경의중앙선 금촌역 하차 > 67번 마을버스 (약 30분) > 벽초지 수목원 <br>
-            경의중앙선 월롱역 하차 > 택시 (뚝방길 이용 약 8,000원) > 벽초지 수목원</p>    
-        </div>   
     </div>
-        
-    </div>
-    
     <!-- section5 -->
 
     <footer id="footer">
         <div class="conts-area">
-            <div class="footer-logo">
+            <!-- <div class="footer-logo">
                 <img src="images/footer-logo.png" alt="">
-            </div>
+            </div> -->
             <div class="company-info">
                 <ul>
                     <li class="place">경기도 파주시 부흥로 242 | Gyeonggi-do, Paju-si, Buheung-ro 242</li>
