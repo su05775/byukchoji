@@ -53,11 +53,6 @@
 	font-size:16px;
 	font-family: 'S-CoreDream-2ExtraLight';
 }
-.menu-btn{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 10px;
-}
 /* menu */
 
 .logo {
@@ -86,7 +81,7 @@
 #section01{
 	width:100%; 
 	height:auto; 
-	background: url(../images/main_2.jpg);
+	background: url(../images/main_1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
@@ -860,7 +855,7 @@
 @media (max-width: 414px) {
     #section1 {
         width: 100%;
-        height: 800px;
+        height: auto;
         background: url(../images/main_2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -872,13 +867,14 @@
     .navi>li {
 		display: none;
 		margin-right: 25px;
+		margin-top: 8%;
 	}
 	.menu-btn {
 		display: block;
 		position: fixed;
 		margin-top: 5.3%;
 		margin-left: 90%;
-		color: #08462a;
+		color: rgb(129, 129, 129);
 	}
 	.menu_box{
         position: fixed;
@@ -886,18 +882,16 @@
 		width: 100%;
 		height: 70px;
     }
-    /* .menu-btn {
-        display: block;
-	} */
 	.sub-txt {
 		width: 100%;
 		font-size:21px;
 		position: relative;
-		bottom:30px;
+		bottom:10px;
 	}
 	.main-txt {
 		position: relative;
 		bottom:400px;
+		font-size: 50px;
 	}
 	/* section01 end */
 
@@ -986,14 +980,14 @@
 
 	.company-info {
 		margin-left: 10px;
-		font-size: 16px;
 	}
 	.company-info li {
 		padding-top: 2%;
+		font-size: 14px;
 	}
 	.copyright {
 		margin-left: 10px;
-		font-size: 14px;
+		font-size: 12px;
 	}
 	/* footer end */
 }
