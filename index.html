@@ -5,6 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device=width, initial-scale=1.0">
 <title>벽초지 수목원</title>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<!-- menu-btn -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <!-- swiper css -->
 <link rel="stylesheet" href="css/animate.css">
@@ -18,41 +20,11 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- swiper -->
 
-
 <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
 <!-- animation -->
-
-<script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-</script>
-<!-- mobile menu -->
-
-<script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-</script>
-<!-- section05 tab menu -->
 </head>
 
 <body>
@@ -68,22 +40,16 @@
                 <li><a href="#section04">갤러리</a></li>
                 <li><a href="#section05">오시는길</a></li>
             </ul>
+            <span class="xi-bars menu-btn"></span>
         </div>
-        <!-- navi end -->
-        <div class="mobile-container">
-            <div class="topnav">
-              <div id="myLinks">
-                <a href="#section1">메인</a>
-                <a href="#">소개</a>
-                <a href="#">공간이야기</a>
-                <a href="#">갤러리</a>
-               <a href="#">오시는길</a>
-              </div>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
-        </div>
+        <script type="text/javascript">
+            $(function(){
+                $(".menu-btn").click(function(){
+                    $(".navi>li").slideToggle();
+                });
+            });
+        </script>
+        <!-- menu end -->
         <p class="sub-txt  wow slideInDown">동서양의 아름다운 정원을 모두 품은</p>
         <h1 class="main-txt  wow slideInDown">벽초지 <br> 수목원</h1>
     </div>
@@ -253,52 +219,39 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    </div>
-  <!-- Swiper JS -->
+          <!-- Swiper JS -->
   <script src="../package/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
   <script>
-    var appendNumber = 4;
-    var prependNumber = 1;
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      centeredSlides: true,
       spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+      breakpoints: {
+        414: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          slidesPerGroup : 1,
+        },
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+          slidesPerGroup : 2,
+        },
       },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     });
-    document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.prependSlide([
-        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
-        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
-      ]);
-    });
-    document.querySelector('.prepend-slide').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
-    });
-    document.querySelector('.append-slide').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
-    });
-    document.querySelector('.append-2-slides').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.appendSlide([
-        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
-        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
-      ]);
-    });
   </script>
-<!-- swiper --> 
-
+    <!--web gallery  -->
+    </div>
 
 
     <div id="section05">
@@ -351,9 +304,9 @@
     });
     </script>
     <!-- 카카오맵 지도 -->
-        <div class="tab-menu wow slideInLeft">
+        <div class="tab-menu">
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">대중교통</button>
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">대중교통</button>
                 <button class="tablinks" onclick="openCity(event, 'Paris')">자차</button>
             </div>
             
@@ -369,13 +322,31 @@
             </div>    
         </div>
     </div>
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <!-- section05 tab menu -->
+
     <!-- section5 -->
 
     <footer id="footer">
         <div class="conts-area">
-            <!-- <div class="footer-logo">
-                <img src="images/footer-logo.png" alt="">
-            </div> -->
             <div class="company-info">
                 <ul>
                     <li class="place">경기도 파주시 부흥로 242 | Gyeonggi-do, Paju-si, Buheung-ro 242</li>
@@ -386,7 +357,6 @@
             <p class="copyright">Copyright © byukchoji gardens. All rights reserved.</p>
         </div>
         <div class="clear"></div>
-
     <script>
         /**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
         if (jQuery(window).width() > 0) {
